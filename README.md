@@ -1,6 +1,7 @@
 # Remote Assignment
 
 Na Alura temos o estudante(User), e o curso.
+
 Para o aluno começar a fazer o curso ele tem que se matricular nele.
 
 O que queremos que você faça:
