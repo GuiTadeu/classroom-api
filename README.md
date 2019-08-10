@@ -2,7 +2,7 @@
 
 A documentaçao da API (Swagger) se encontra no seguinte endereço: [aluradev-api](http://aluradev-api.herokuapp.com/).
 
-Existe uma rota [/populate] para inserir dados no "banco".
+Existe uma rota [/populate](http://aluradev-api.herokuapp.com/populate) para inserir dados no "banco".
  
 ## Funcionalidades
 - [x] Implementar os métodos que estão no UserRepository
