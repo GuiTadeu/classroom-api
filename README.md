@@ -1,10 +1,8 @@
 # Remote Assignment
 
-Na Alura temos o estudante(User), e o curso.
+A documentaçao da API (Swagger) se encontra no seguinte endereço: [aluradev-api](http://aluradev-api.herokuapp.com/).
 
-Para o aluno começar a fazer o curso ele tem que se matricular nele.
-
-O que queremos que você faça:
+Existe uma rota [/populate] para inserir dados no "banco".
  
 ## Funcionalidades
 - [x] Implementar os métodos que estão no UserRepository
