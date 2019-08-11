@@ -17,7 +17,7 @@ Existe uma rota [/populate](http://aluradev-api.herokuapp.com/populate) para ins
 
 ### Course
 
-| HTTP           | RECOURSE       | DESCRIPTION    |
+| HTTP           | RESOURCE       | DESCRIPTION    |
 | :------------: | :------------: | :------------: |
 | GET | /courses | list |
 | GET | /courses/{idCourse}/find/user/{idUser} | findUserInCourse |
@@ -27,13 +27,13 @@ Existe uma rota [/populate](http://aluradev-api.herokuapp.com/populate) para ins
 
 ### Registration
 
-| HTTP           | RECOURSE       | DESCRIPTION    |
+| HTTP           | RESOURCE       | DESCRIPTION    |
 | :------------: | :------------: | :------------: |
 | POST| /registration/course/{idCourse}/user/{idUser} | register |
 
 ### User
 
-| HTTP           | RECOURSE       | DESCRIPTION    |
+| HTTP           | RESOURCE       | DESCRIPTION    |
 | :------------: | :------------: | :------------: |
 | GET | /users | list |
 | POST| /users/create | create |
