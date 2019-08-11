@@ -1,9 +1,8 @@
 # Remote Assignment
 
-Na Alura temos o estudante(User), e o curso.
-Para o aluno começar a fazer o curso ele tem que se matricular nele.
+A documentaçao da API (Swagger) se encontra no seguinte endereço: [aluradev-api](http://aluradev-api.herokuapp.com/).
 
-O que queremos que você faça:
+Existe uma rota [/populate](http://aluradev-api.herokuapp.com/populate) para inserir dados no "banco".
  
 ## Funcionalidades
 - [x] Implementar os métodos que estão no UserRepository
@@ -13,3 +12,21 @@ O que queremos que você faça:
 - [x] Criar um método que matricule um User em um curso
 - [x] Criar um método que retorne se um usuário está matriculado em um curso ou não
 - [x] Criar um método que retorne todos alunos que estão em um curso
+
+## Resources
+
+| HTTP           | RESOURCE       | DESCRIPTION    |
+| :------------: | :------------: | :------------: |
+| GET | /courses | list |
+| GET | /courses/{idCourse}/find/user/{idUser} | findUserInCourse |
+| GET | /courses/{idCourse}/users | getAllUsersInCourse |
+| POST| /courses/create | create |
+| GET | /courses/find/id/{id} | findById |
+| GET | /users | list |
+| POST| /users/create | create |
+| GET | /users/find/email/{email} | findByEmail |
+| GET | /users/find/email/like/{emailPart} | findByEmailLike |
+| GET | /users/find/id/{id} | findById |
+| GET | /users/find/name/{name} | findByName |
+| GET | /users/find/name/like/{namePart} | findByNameLike |
+| POST| /registration/course/{idCourse}/user/{idUser} | register |
