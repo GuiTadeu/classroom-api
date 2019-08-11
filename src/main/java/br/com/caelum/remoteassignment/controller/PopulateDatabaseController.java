@@ -15,6 +15,12 @@ import br.com.caelum.remoteassignment.repository.CourseRepository;
 import br.com.caelum.remoteassignment.repository.RegistrationRepository;
 import br.com.caelum.remoteassignment.repository.UserRepository;
 
+/**
+ * Controller criado para popular o banco de dados
+ * e facilitar a realização de testes da API.
+ * @author Guilherme Tadeu
+ */
+
 @Controller
 public class PopulateDatabaseController {
 	

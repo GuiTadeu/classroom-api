@@ -1,5 +1,11 @@
 package br.com.caelum.remoteassignment.model;
 
+/**
+ * Classe criada para atribuir o ID as classes
+ * herdeiras.
+ * @author Alura
+ * @version 1.0.0
+ */
 public abstract class Entity {
 	
 	private Long id;

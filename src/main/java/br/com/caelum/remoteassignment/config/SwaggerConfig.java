@@ -13,10 +13,22 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+/**
+ * Classe criada para geração da documentação do Swagger.
+ * @author Guilherme Tadeu
+ * @version 1.0.0
+ * @
+ */
+
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
 	
+	/**
+	 * Método criado para especificar o pacote de controllers
+	 * que será utilizado para geração da documentação.
+	 * @see SwaggerConfig#apiInfo()
+	 */
 	@Bean
     public Docket api() { 
         return new Docket(DocumentationType.SWAGGER_2)  
@@ -27,6 +39,12 @@ public class SwaggerConfig {
           .apiInfo(apiInfo());
     }
 	
+		/**
+		 * Método criado para gerar o cabeçalho de informações
+		 * da documentação.
+		 * @see Contact
+		 * @return ApiInfo
+		 */
 	private ApiInfo apiInfo() {
 	    return new ApiInfo(
 	      "AluraDev", 

@@ -1,5 +1,12 @@
 package br.com.caelum.remoteassignment.model;
 
+/**
+ * Classe criada com a finalidade de definir
+ * um modelo do tipo Course.
+ * @author Guilherme Tadeu
+ * @version 1.0.0
+ * @see CoursePO
+ */
 public class Course extends Entity {
 	
 	private String nome;
@@ -7,6 +14,11 @@ public class Course extends Entity {
 	
 	public Course() {}
 	
+	/**
+	 * Método construtor criado para omitir
+	 * a geração do ID.
+	 * @see CoursePO
+	 */
 	public Course(String nome, int cargaHoraria) {
 		this.nome = nome;
 		this.cargaHoraria = cargaHoraria;
@@ -28,6 +40,11 @@ public class Course extends Entity {
 		this.cargaHoraria = cargaHoraria;
 	}
 
+	/**
+	 * Método criado para a geração do hashCode
+	 * e facilitar a performance da busca no banco.
+	 * @see Repository#database
+	 */
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -36,6 +53,11 @@ public class Course extends Entity {
 		return result;
 	}
 
+	/**
+	 * Método criado para comparar objetos do tipo
+	 * Course através do atributo Nome.
+	 * @see Course#nome
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

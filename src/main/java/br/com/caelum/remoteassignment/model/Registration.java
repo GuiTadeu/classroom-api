@@ -1,5 +1,12 @@
 package br.com.caelum.remoteassignment.model;
 
+/**
+ * Classe criada com a finalidade de definir
+ * um modelo do tipo Registration.
+ * @author Guilherme Tadeu
+ * @version 1.0.0
+ * @see RegistrationPO
+ */
 public class Registration extends Entity {
 	
 	private Course course;
@@ -7,6 +14,12 @@ public class Registration extends Entity {
 	
 	public Registration() {}
 	
+	/**
+	 * Método construtor criado para omitir
+	 * a geração do ID.
+	 * @author Guilherme Tadeu
+	 * @see RegistrationPO
+	 */
 	public Registration(Course course, User user) {
 		this.course = course;
 		this.user = user;	
@@ -25,6 +38,11 @@ public class Registration extends Entity {
 		this.user = user;
 	}
 
+	/**
+	 * Método criado para a geração do hashCode
+	 * e facilitar a performance da busca no banco.
+	 * @see Repository#database
+	 */
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -34,6 +52,13 @@ public class Registration extends Entity {
 		return result;
 	}
 
+	/**
+	 * Método criado para comparar objetos do tipo
+	 * Registration através da combinação dos atributos
+	 * do tipo User e Course.
+	 * @see User
+	 * @see Course
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

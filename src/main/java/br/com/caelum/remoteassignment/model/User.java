@@ -1,5 +1,12 @@
 package br.com.caelum.remoteassignment.model;
 
+/**
+ * Classe criada com a finalidade de definir
+ * um modelo do tipo User.
+ * @author Alura
+ * @version 1.0.0
+ * @see UserPO
+ */
 public class User extends Entity {
 
 	private String name;
@@ -7,6 +14,12 @@ public class User extends Entity {
 	
 	public User() {}
 	
+	/**
+	 * Método construtor criado para omitir
+	 * a geração do ID.
+	 * @author Guilherme Tadeu
+	 * @see UserPO
+	 */
 	public User(String name, String email) {
 		this.name = name;
 		this.email = email;
@@ -28,6 +41,11 @@ public class User extends Entity {
 		this.email = email;
 	}
 
+	/**
+	 * Método criado para a geração do hashCode
+	 * e facilitar a performance da busca no banco.
+	 * @see Repository#database
+	 */
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -36,6 +54,11 @@ public class User extends Entity {
 		return result;
 	}
 
+	/**
+	 * Método criado para comparar objetos do tipo
+	 * User através do atributo Email.
+	 * @see User#email
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

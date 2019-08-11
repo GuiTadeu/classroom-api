@@ -5,6 +5,13 @@ import javax.validation.constraints.NotBlank;
 
 import br.com.caelum.remoteassignment.model.User;
 
+/**
+ * Classe criada para ser utilizada como Persistence
+ * Object do tipo User.
+ * @author Guilherme Tadeu
+ * @version 1.0.0
+ * @see User
+ */
 public class UserPO {
 	
 	private static Long idGenerator = 1L;
@@ -23,6 +30,13 @@ public class UserPO {
 		this.email = email;
 	}
 	
+	/**
+	 * Método criado para converter um UserPO
+	 * em User. Na conversão é feita a geração
+	 * do ID que será persistido em banco.
+	 * @see User#User(String, String)
+	 * @return User
+	 */
 	public User converter() {
 		User user = new User(name, email);
 		user.setId(idGenerator++);

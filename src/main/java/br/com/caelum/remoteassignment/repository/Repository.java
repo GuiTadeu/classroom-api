@@ -4,6 +4,13 @@ import br.com.caelum.remoteassignment.model.Entity;
 
 import java.util.*;
 
+/**
+ * Classe criada para simular um banco de dados
+ * e criar um repositório para classes herdeiras.
+ * @author Alura
+ * @author Guilherme Tadeu
+ * @version 1.0.0
+ */
 public abstract class Repository<E extends Entity> {
 
 	private Map<Long, E> database = new HashMap<>();

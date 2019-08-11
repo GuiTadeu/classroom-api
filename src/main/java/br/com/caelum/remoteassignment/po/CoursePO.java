@@ -5,6 +5,13 @@ import javax.validation.constraints.NotBlank;
 
 import br.com.caelum.remoteassignment.model.Course;
 
+/**
+ * Classe criada para ser utilizada como Persistence
+ * Object do tipo Course.
+ * @author Guilherme Tadeu
+ * @version 1.0.0
+ * @see Course
+ */
 public class CoursePO {
 	
 	private static Long idGenerator = 1L;
@@ -22,6 +29,13 @@ public class CoursePO {
 		this.cargaHoraria = cargaHoraria;
 	}
 	
+	/**
+	 * Método criado para converter um CoursePO
+	 * em Course. Na conversão é feita a geração
+	 * do ID que será persistido em banco.
+	 * @see Course#Course(String, int)
+	 * @return Course
+	 */
 	public Course converter() {
 		Course course = new Course(nome, cargaHoraria);
 		course.setId(idGenerator++);
