@@ -13,9 +13,7 @@ Existe uma rota [/populate](http://aluradev-api.herokuapp.com/populate) para ins
 - [x] Criar um método que retorne se um usuário está matriculado em um curso ou não
 - [x] Criar um método que retorne todos alunos que estão em um curso
 
-## Controllers
-
-### Course
+## Course
 
 | HTTP           | RESOURCE       | DESCRIPTION    |
 | :------------: | :------------: | :------------: |
@@ -25,13 +23,13 @@ Existe uma rota [/populate](http://aluradev-api.herokuapp.com/populate) para ins
 | POST| /courses/create | create |
 | GET | /courses/find/id/{id} | findById |
 
-### Registration
+## Registration
 
 | HTTP           | RESOURCE       | DESCRIPTION    |
 | :------------: | :------------: | :------------: |
 | POST| /registration/course/{idCourse}/user/{idUser} | register |
 
-### User
+## User
 
 | HTTP           | RESOURCE       | DESCRIPTION    |
 | :------------: | :------------: | :------------: |
