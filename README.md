@@ -15,7 +15,7 @@ Existe uma rota [/populate](http://aluradev-api.herokuapp.com/populate) para ins
 
 ## Resources
 
-| HTTP           | RESOURCE       | DESCRIPTION    |
+| HTTP           | ROUTES       | DESCRIPTION    |
 | :------------: | :------------: | :------------: |
 | GET | /courses | list |
 | GET | /courses/{idCourse}/find/user/{idUser} | findUserInCourse |
