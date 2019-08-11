@@ -13,7 +13,7 @@ Existe uma rota [/populate](http://aluradev-api.herokuapp.com/populate) para ins
 - [x] Criar um método que retorne se um usuário está matriculado em um curso ou não
 - [x] Criar um método que retorne todos alunos que estão em um curso
 
-## RESOURCES
+## Resources
 
 | HTTP           | RESOURCE       | DESCRIPTION    |
 | :------------: | :------------: | :------------: |
