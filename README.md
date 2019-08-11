@@ -13,7 +13,7 @@ Existe uma rota [/populate](http://aluradev-api.herokuapp.com/populate) para ins
 - [x] Criar um método que retorne se um usuário está matriculado em um curso ou não
 - [x] Criar um método que retorne todos alunos que estão em um curso
 
-## Course
+## RESOURCES
 
 | HTTP           | RESOURCE       | DESCRIPTION    |
 | :------------: | :------------: | :------------: |
@@ -22,17 +22,6 @@ Existe uma rota [/populate](http://aluradev-api.herokuapp.com/populate) para ins
 | GET | /courses/{idCourse}/users | getAllUsersInCourse |
 | POST| /courses/create | create |
 | GET | /courses/find/id/{id} | findById |
-
-## Registration
-
-| HTTP           | RESOURCE       | DESCRIPTION    |
-| :------------: | :------------: | :------------: |
-| POST| /registration/course/{idCourse}/user/{idUser} | register |
-
-## User
-
-| HTTP           | RESOURCE       | DESCRIPTION    |
-| :------------: | :------------: | :------------: |
 | GET | /users | list |
 | POST| /users/create | create |
 | GET | /users/find/email/{email} | findByEmail |
@@ -40,3 +29,4 @@ Existe uma rota [/populate](http://aluradev-api.herokuapp.com/populate) para ins
 | GET | /users/find/id/{id} | findById |
 | GET | /users/find/name/{name} | findByName |
 | GET | /users/find/name/like/{namePart} | findByNameLike |
+| POST| /registration/course/{idCourse}/user/{idUser} | register |
