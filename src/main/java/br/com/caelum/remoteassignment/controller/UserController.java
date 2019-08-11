@@ -63,14 +63,14 @@ public class UserController {
 	}
 	
 	@GetMapping("/find/name/{name}")
-	public ResponseEntity<List<User>> findByName(@PathVariable String nome) {
-		List<User> users = userRepository.findByName(nome);
+	public ResponseEntity<List<User>> findByName(@PathVariable String name) {
+		List<User> users = userRepository.findByName(name);
 		return ResponseEntity.ok(users);
 	}
 	
 	@GetMapping("/find/name/like/{namePart}")
-	public ResponseEntity<List<User>> findByNameLike(@PathVariable String nomePart) {
-		List<User> users = userRepository.findByNameLike(nomePart);
+	public ResponseEntity<List<User>> findByNameLike(@PathVariable String namePart) {
+		List<User> users = userRepository.findByNameLike(namePart);
 		return ResponseEntity.ok(users);
 	}
 }
