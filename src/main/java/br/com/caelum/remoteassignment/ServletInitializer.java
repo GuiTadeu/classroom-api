@@ -8,6 +8,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  * de aplicação utilizando o formato WAR.
  * @author Guilherme Tadeu
  * @version 1.0.0
+ * @see Main
  */
 public class ServletInitializer extends SpringBootServletInitializer {
 
