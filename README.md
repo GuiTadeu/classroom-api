@@ -1,4 +1,4 @@
-# Remote Assignment
+# Alura API
 
 A documentaçao da API (Swagger) se encontra no seguinte endereço: [alura-api](http://aluradev-api.herokuapp.com/).
 
