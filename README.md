@@ -1,6 +1,6 @@
 # Remote Assignment
 
-A documentaçao da API (Swagger) se encontra no seguinte endereço: [aluradev-api](http://aluradev-api.herokuapp.com/).
+A documentaçao da API (Swagger) se encontra no seguinte endereço: [alura-api](http://aluradev-api.herokuapp.com/).
 
 Existe uma rota [/populate](http://aluradev-api.herokuapp.com/populate) para inserir dados no "banco".
  
